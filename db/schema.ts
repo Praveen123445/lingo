@@ -1,6 +1,5 @@
 import { relations } from "drizzle-orm";
 import { boolean, integer, pgEnum, pgTable, serial, text } from "drizzle-orm/pg-core";
-import { title } from "process";
 export const courses = pgTable("courses", {
     id: serial("id").primaryKey(),
     title: text("title").notNull(),
@@ -25,7 +24,7 @@ export const unitsRelations = relations(units, ({ many, one}) => ({
         fields: [units.courseId],
         references: [courses.id],
     }),
-    lesson: many(lessons),
+    lessons: many(lessons),
 }));
 
 export const lessons = pgTable("lessons", {
