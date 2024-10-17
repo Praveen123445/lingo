@@ -9,7 +9,7 @@ import {
   // UserButton
 } from '@clerk/nextjs'
 import "./globals.css";
-import { ExitModal } from "@/components/ui/modals/exit-modal";
+import { ExitModal } from "@/components/modals/exit-modal";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

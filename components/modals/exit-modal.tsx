@@ -3,9 +3,9 @@
 import { useExitModal } from "@/store/use-exit-modal";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../dialog";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../ui/dialog";
 import Image from "next/image";
-import { Button } from "../button";
+import { Button } from "../ui/button";
 
 export const ExitModal = () => {
     const router = useRouter();
