@@ -17,8 +17,6 @@ type Props = {
 };
 
 export const Unit = ({
-    id,
-    order,
     title,
     description,
     lessons,
@@ -40,6 +38,7 @@ export const Unit = ({
                       index={index}
                       totalCount={lessons.length - 1}
                       current={isCurrent}
+                      locked={isLocked}
                       percentage={activeLessonPercentage}
                     />
                 )

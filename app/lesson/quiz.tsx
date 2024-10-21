@@ -52,12 +52,12 @@ export const Quiz = ({
     const [
         correctAudio,
         _c,
-        correctControls,
+        correctControls
     ] = useAudio({ src: "/correct.wav" });
     const [
         incorrectAudio,
         _i,
-        incorrectControls,
+        incorrectControls
     ] = useAudio({ src: "/incorrect.wav" });
     const [pending, startTransition] = useTransition();
     const [lessonId] = useState(initialLessonId)
