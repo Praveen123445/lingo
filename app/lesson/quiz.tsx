@@ -49,14 +49,16 @@ export const Quiz = ({
     const router = useRouter();
     const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: true});
 
+    /* eslint-disable */ 
     const [
         correctAudio,
-        ,
+        _c,
         correctControls
     ] = useAudio({ src: "/correct.wav" });
+    /* eslint-disable */
     const [
         incorrectAudio,
-        ,
+        _i,
         incorrectControls
     ] = useAudio({ src: "/incorrect.wav" });
     const [pending, startTransition] = useTransition();
